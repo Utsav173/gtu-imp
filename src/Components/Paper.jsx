@@ -21,7 +21,7 @@ const Paper = ({linka}) => {
   }
   return (
     <Container className="ada">
-        <div className="shadow p-3 mb-5 bg-body-tertiary">
+        <div className="shadow p-3 my-4 bg-body-tertiary">
           <Document file={file} onLoadSuccess={onDocumentLoadSuccess} options={options} className="w-100 overflow-auto">
             {Array.from(new Array(numPages), (el, index) => (
               <Page key={`page_${index + 1}`} pageNumber={index + 1} />
