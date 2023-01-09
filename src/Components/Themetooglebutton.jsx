@@ -54,7 +54,7 @@ export default function CustomizedSwitches(props) {
   return (
     <FormGroup>
       <FormControlLabel
-        control={<MaterialUISwitch defaultunChecked />}
+        control={<MaterialUISwitch />}
         onClick={props.togglemode}
       />
     </FormGroup>
