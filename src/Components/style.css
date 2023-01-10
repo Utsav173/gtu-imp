@@ -15,6 +15,9 @@ justify-content: center;
 .ada{
     transition: 0.2s ease;
 }
+.btn.btn-outline-danger.text-capitalize.my-1.shadow.rounded:hover{
+    font-weight: bold;
+}
 
 @media only screen and (min-width: 600px) {
     .ada{
