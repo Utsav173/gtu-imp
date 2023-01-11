@@ -9,13 +9,9 @@ import {
 import Home from "./Components/Home";
 import About from "./Components/About";
 import Header from "./Components/Header";
-
-import { Analytics } from '@vercel/analytics/react';
 import Download from "./Components/Download";
 import Paper from "./Components/Paper";
 
-
-<Analytics debug={false} />;
 
 function App() {
 
@@ -37,7 +33,7 @@ function App() {
     <Router>
       <Header mode={mode} togglemode={togglemode}/>
       <Routes>
-        <Route exact path="*" element={<Home mode={mode}/>}/>
+        <Route index path="*" element={<Home mode={mode}/>}/>
         <Route exact path="/about" element={<About mode={mode}/>}/>
         <Route exact path="/download" element={<Download mode={mode}/>}/>
       </Routes>
