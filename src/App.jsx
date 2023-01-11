@@ -10,7 +10,6 @@ import Home from "./Components/Home";
 import About from "./Components/About";
 import Header from "./Components/Header";
 import Download from "./Components/Download";
-import Paper from "./Components/Paper";
 
 
 function App() {
