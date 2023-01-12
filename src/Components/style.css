@@ -1,3 +1,7 @@
+::selection{
+    background-color: #0000003c;
+}
+
 .react-pdf__Page__canvas{
 display: flex;
 justify-content: center;
@@ -15,8 +19,31 @@ justify-content: center;
 .ada{
     transition: 0.2s ease;
 }
-.btn.btn-outline-danger.text-capitalize.my-1.shadow.rounded:hover{
+.btn.text-capitalize.my-1.fd{
+    background-image: linear-gradient(to right, #f5ce62, #e43603, #fa7199, #e85a19);
+    box-shadow: 0 4px 15px 0 rgba(229, 66, 10, 0.75);
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    text-align:center;
     font-weight: bold;
+    border: none;
+    background-size: 300% 100%;
+    -moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+    
+.btn.text-capitalize.my-1.fd:hover{
+    background-position: 100% 0;
+    -moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+    color: rgb(252, 255, 84);
+}
+.btn.text-capitalize.my-1.fd:focus{
+    outline: none;
 }
 
 @media only screen and (min-width: 600px) {

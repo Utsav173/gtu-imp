@@ -23,13 +23,15 @@ const Home = (props) => {
           {/* <Link to="/adudpaper" className='btn btn-outline-${props.mode === "light" ? "dark" : "light"} text-capitalize my-1'>ADUD Previous Years papers</Link> */}
           <Link
             to="/iswapaper"
-            className="btn btn-outline-danger text-capitalize my-1 shadow rounded"
+            className="btn text-capitalize my-1 fd"
           >
             ISWA Previous Years papers
           </Link>
           <Link
             to="/varpaper"
-            className="btn btn-success text-capitalize my-1 shadow bg-success rounded fw-bolder"
+            className={`btn btn-outline-${
+              props.mode === "light" ? "dark" : "light"
+            } shadow rounded text-capitalize my-1`}
           >
             VAR Previous Years papers
           </Link>
