@@ -1,8 +1,9 @@
 
 import "./App.css";
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import {
   BrowserRouter as Router,
+  Navigate,
   Route,
   Routes
 } from "react-router-dom";
@@ -32,9 +33,10 @@ function App() {
     <Router>
       <Header mode={mode} togglemode={togglemode}/>
       <Routes>
-        <Route index path="*" element={<Home mode={mode}/>}/>
+        <Route exact path="/" element={<Home mode={mode}/>}/>
         <Route exact path="/about" element={<About mode={mode}/>}/>
         <Route exact path="/download" element={<Download mode={mode}/>}/>
+        <Route path="*" element={ <Navigate to="/" /> } />
       </Routes>
     </Router>
    
