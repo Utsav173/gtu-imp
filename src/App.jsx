@@ -36,7 +36,7 @@ function App() {
         <Route index path="*" element={<Home mode={mode}/>}/>
         <Route exact path="/about" element={<About mode={mode}/>}/>
         <Route exact path="/download" element={<Download mode={mode}/>}/>
-        <Route index path="*" element={<Navigate to="/"/>}/>
+        <Route index path="/" element={<Navigate to="/"/>}/>
       </Routes>
     </Router>
    
