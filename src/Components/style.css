@@ -20,8 +20,11 @@ justify-content: center;
     transition: 0.2s ease;
 }
 .btn.text-capitalize.my-1.fd{
-    background-image: linear-gradient(to right, #f5ce62, #e43603, #fa7199, #e85a19);
+    background-image: linear-gradient(to right, #ffd35a, #e43603, #fa7199, #e85a19);
     box-shadow: 0 4px 15px 0 rgba(229, 66, 10, 0.75);
+    -webkit-animation: Anime 5s ease-in-out infinite;
+    -moz-animation: Anime 5s ease-in-out infinite;
+    animation: Anime 5s ease-in-out infinite;
     color: rgb(255, 255, 255);
     cursor: pointer;
     text-align:center;
@@ -32,6 +35,24 @@ justify-content: center;
     -o-transition: all .4s ease-in-out;
     -webkit-transition: all .4s ease-in-out;
     transition: all .4s ease-in-out;
+}
+@-webkit-keyframes Anime {
+    0%{box-shadow: 0 4px 15px 0 rgb(255, 115, 0);}
+    30%{box-shadow: 0 4px 15px 0 rgb(255, 179, 0);}
+    75%{box-shadow: 0 4px 15px 0 rgb(255, 136, 136);}
+    100%{box-shadow: 0 4px 15px 0 rgba(255, 0, 0, 0.75);}
+}
+@-moz-keyframes Anime {
+    0%{box-shadow: 0 4px 15px 0 rgb(255, 115, 0);}
+    30%{box-shadow: 0 4px 15px 0 rgb(255, 179, 0);}
+    75%{box-shadow: 0 4px 15px 0 rgb(255, 136, 136);}
+    100%{box-shadow: 0 4px 15px 0 rgba(255, 0, 0, 0.75);}
+}
+@keyframes Anime {
+    0%{box-shadow: 0 4px 15px 0 rgb(255, 115, 0);}
+    30%{box-shadow: 0 4px 15px 0 rgb(255, 179, 0);}
+    75%{box-shadow: 0 4px 15px 0 rgb(255, 136, 136);}
+    100%{box-shadow: 0 4px 15px 0 rgba(255, 0, 0, 0.75);}
 }
     
 .btn.text-capitalize.my-1.fd:hover{
