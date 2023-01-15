@@ -7,9 +7,9 @@ import "./style.css"
 
 const Download = (props) => {
   return (
-    <Container className={`container d-flex justify-content-center flex-column text-${props.mode === "light" ? "dark" : "light"}`}>
+    <Container className={`container d-flex justify-content-center align-items-center flex-column text-${props.mode === "light" ? "dark" : "light"}`}>
       <h1 className="text-center my-3 p-2 text-capitalize">Download available content</h1>
-      <Container className="d-flex justify-content-center">
+      <Container className="d-flex justify-content-center align-items-center">
       <Table className={`table my-2 text-capitalize w-90 text-${props.mode === "light" ? "dark" : "light"}`}>
         <thead>
           <tr>
