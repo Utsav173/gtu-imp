@@ -30,10 +30,10 @@ function App() {
       <Header mode={mode} togglemode={togglemode} />
       <Routes>
         <Route index element={<Home mode={mode} />} />
-        <Route exact path="*" element={<Home mode={mode} />} />
+        <Route exact path="/home" element={<Home mode={mode} />} />
         <Route exact path="/about" element={<About mode={mode} />} />
         <Route exact path="/download" element={<Download mode={mode} />} />
-        <Route exact element={<Navigate to='*' />} />
+        <Route exact element={<Navigate to="/about" />} />
       </Routes>
     </Router>
   );
