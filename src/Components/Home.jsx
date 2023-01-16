@@ -1,16 +1,16 @@
 import React from "react";
 import { Nav } from "react-bootstrap";
 import Container from "react-bootstrap/Container";
-import { Link, Route, Routes } from "react-router-dom";
+import { Link, Navigate, Route, Routes } from "react-router-dom";
 import Paper from "./Paper";
 
 const Home = (props) => {
   return (
     <Container className={`text-${props.mode === "light" ? "dark" : "light"}`}>
       <Container className="text-center">
-        <p variant="secondary" className="my-2 p-2 text-capitalize">
+        <h1 variant="secondary" className="my-2 p-2 text-capitalize">
           Click below button to read document
-        </p>
+        </h1>
         <Nav className="me-auto d-flex justify-content-evenly my-4 gap-2">
           <Link
             to="/gtuimp"
@@ -51,6 +51,7 @@ const Home = (props) => {
         <Route exact path="/iswapaper" element={<Paper linka="iswapaper" />} />
         <Route exact path="/varpaper" element={<Paper linka="varpaper" />} />
         <Route exact path="/cvpaper" element={<Paper linka="cvpaper" />} />
+        <Route exact element={<Navigate to="/about" />} />
       </Routes>
     </Container>
   );
