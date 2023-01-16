@@ -8,7 +8,7 @@ import CustomizedSwitches from "./Themetooglebutton";
 
 const Header = (props) => {
   return (
-    <Navbar bg="dark" variant="dark" expand="lg">
+    <Navbar className={`navbar-custom-${props.mode}`} variant={`${props.mode}`} expand="lg">
       <Container>
         <Navbar.Brand to="/">7th Sem IMP</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -28,29 +28,35 @@ const Header = (props) => {
               title="Old Website"
               id="basic-nav-dropdown"
             >
-              <NavDropdown.Item
+              <NavDropdown.Item 
                 href="https://adud-paper.vercel.app"
                 target="blank"
               >
                 ADUD paper
               </NavDropdown.Item>
-              <NavDropdown.Item
+              <NavDropdown.Item 
                 href="https://var-paper.vercel.app"
                 target="blank"
               >
                 VAR paper
               </NavDropdown.Item>
-              <NavDropdown.Item
+              <NavDropdown.Item 
                 href="https://iswa-paper.vercel.app"
                 target="blank"
               >
                 ISWA paper
               </NavDropdown.Item>
-              <NavDropdown.Item
+              <NavDropdown.Item 
                 href="https://cv-paper.vercel.app"
                 target="blank"
               >
                 CV paper
+              </NavDropdown.Item>
+              <NavDropdown.Item 
+                href="https://iot-paper.vercel.app"
+                target="blank"
+              >
+                IOT paper
               </NavDropdown.Item>
             </NavDropdown>
           </Nav>

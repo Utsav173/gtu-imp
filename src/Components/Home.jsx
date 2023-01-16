@@ -20,12 +20,24 @@ const Home = (props) => {
           >
             GTU IMP QUESTIONS
           </Link>
-          {/* <Link to="/adudpaper" className='btn btn-outline-${props.mode === "light" ? "dark" : "light"} text-capitalize my-1'>ADUD Previous Years papers</Link> */}
           <Link
             to="/iswapaper"
-            className="btn text-capitalize my-1 fd"
+            className={`btn btn-outline-${
+              props.mode === "light" ? "dark" : "light"
+            } shadow rounded text-capitalize my-1`}
           >
             ISWA Previous Years papers
+          </Link>
+          {/* <Link
+            to="/adudpaper"
+            className={`btn btn-outline-${
+              props.mode === "light" ? "dark" : "light"
+            } shadow rounded text-capitalize my-1`}
+          >
+            ADUD Previous Years papers
+          </Link> */}
+          <Link to="/iotpaper" className="btn text-capitalize my-1 fd">
+            IOT Previous Years papers
           </Link>
           <Link
             to="/varpaper"
@@ -35,14 +47,14 @@ const Home = (props) => {
           >
             VAR Previous Years papers
           </Link>
-          <Link
+          {/* <Link
             to="/cvpaper"
             className={`btn btn-outline-${
               props.mode === "light" ? "dark" : "light"
             } shadow rounded text-capitalize my-1`}
           >
             CV Previous Years papers
-          </Link>
+          </Link> */}
         </Nav>
       </Container>
       <Routes>
@@ -51,6 +63,7 @@ const Home = (props) => {
         <Route exact path="/iswapaper" element={<Paper linka="iswapaper" />} />
         <Route exact path="/varpaper" element={<Paper linka="varpaper" />} />
         <Route exact path="/cvpaper" element={<Paper linka="cvpaper" />} />
+        <Route exact path="/iotpaper" element={<Paper linka="iotpaper" />} />
         <Route exact element={<Navigate to="/about" />} />
       </Routes>
     </Container>

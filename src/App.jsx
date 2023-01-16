@@ -16,12 +16,12 @@ function App() {
   var togglemode = () => {
     if (mode === "light") {
       setMode("dark");
-      document.body.style.backgroundColor = "#212529";
-      document.getElementById("root").style.backgroundColor = "#212529";
+      document.body.style.backgroundColor = "#08080a";
+      document.getElementById("root").style.backgroundColor = "#08080a";
     } else {
       setMode("light");
       document.body.style.backgroundColor = "#ffffff";
-      document.getElementById("root").style.backgroundColor = "#f8f9fa";
+      document.getElementById("root").style.backgroundColor = "#ffffff";
     }
   };
 
