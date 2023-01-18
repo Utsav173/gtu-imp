@@ -38,7 +38,7 @@ function App() {
       <Routes>
         <Route index path="/*" element={<Home mode={mode} />} />
         <Route exact path="/about" element={<About mode={mode} />} />
-        <Route exact path="/download" element={<Download mode={mode} />} />
+        <Route exact path="/downloada" element={<Download mode={mode} />} />
         <Route exact path="/gtuimp" element={<Paper linka="gtuimp" />} />
         <Route exact path="/adudpaper" element={<Paper linka="adudpaper" />} />
         <Route exact path="/iswapaper" element={<Paper linka="iswapaper" />} />
