@@ -47,14 +47,6 @@ const Home = (props) => {
           >
             VAR Previous Years papers
           </Link>
-          {/* <Link
-            to="/cvpaper"
-            className={`btn btn-outline-${
-              props.mode === "light" ? "dark" : "light"
-            } shadow rounded text-capitalize my-1`}
-          >
-            CV Previous Years papers
-          </Link> */}
         </Nav>
       </Container>
       <Routes>

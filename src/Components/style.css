@@ -21,31 +21,22 @@
 }
 .btn.text-capitalize.my-1.fd {
     
-  background-image: linear-gradient(to right, #858585, #03afe4, #719afa, #c0a8ff);
-  box-shadow: 0 4px 23px 0 rgba(225, 10, 229, 0.75);
-  animation: Anime 15s cubic-bezier(0.76, 0.01, 0.21, 0.99) infinite;
-  -moz-animation: Anime 15s ease-in-out infinite;
-  animation: Anime 15s ease-in-out infinite;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent; 
-  -moz-background-clip: text;
-  -moz-text-fill-color: transparent;
-  cursor: pointer;
-  text-align:center;
-  font-weight: bold;
-  border: none;
-  background-size: 300% 100%;
-  -moz-transition: all .4s ease-in-out;
-  -o-transition: all .4s ease-in-out;
-  -webkit-transition: all .4s ease-in-out;
-  transition: all .4s ease-in-out;
+  text-decoration: none;
+  position:  relative;
+ border: none;
+ font-family: inherit;
+ color: #fff;
+ 
+ background: linear-gradient(90deg,#03a9f4,#ff53b5,#ffeb3b,#03a9f4);
+ background-size: 300%;
+ border-radius: 15px;
+ transition: 0.5s cubic-bezier(0.39, 0.14, 0.57);
+ z-index: 1;
 }
 .btn.text-capitalize.my-1.fd:hover{
-    background-position: 100% 0;
-    -moz-transition: all .4s ease-in-out;
-    -o-transition: all .4s ease-in-out;
-    -webkit-transition: all .4s ease-in-out;
-    transition: all .4s ease-in-out;
+  animation: ani 8s linear infinite;
+  border: none;
+  font-weight: bold;
 }
 .btn.text-capitalize.my-1.fd:focus{
     outline: none;
@@ -53,23 +44,38 @@
 
 
 
-@keyframes Anime {
+@keyframes ani {
   0% {
-    box-shadow: 0 4px 21px 0 rgba(77, 255, 0, 0.67);
+   background-position: 0%;
   }
-  30% {
-    box-shadow: 0 4px 15px 0 rgba(0, 242, 255, 0.529);
-  }
-  65% {
-    box-shadow: 0 4px 23px 0 rgba(255, 136, 227, 0.69);
-  }
-  85% {
-    box-shadow: 0 4px 10px 0 rgba(40, 0, 34, 0.462);
-  }
+ 
   100% {
-    box-shadow: 0 4px 14px 0 rgb(255, 238, 179);
+   background-position: 400%;
   }
-}
+ }
+ 
+ .btn.text-capitalize.my-1.fd:before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  z-index: -1;
+  background: linear-gradient(90deg,#03a9f4,#ff0090,#ffeb3b,#03a9f4);
+  background-size: 400%;
+  border-radius: 7px;
+  transition: 1s;
+  font-weight: lighter;
+ }
+ 
+ .btn.text-capitalize.my-1.fd:hover::before {
+  filter: blur(20px);
+ }
+ 
+ .btn.text-capitalize.my-1.fd:active {
+  background: linear-gradient(32deg,#03a9f4,#f441a5,#ffeb3b,#03a9f4);
+ }
 
 @media only screen and (min-width: 600px) {
   .ada {
@@ -92,28 +98,33 @@
 
 .navbar-custom-light {
     background: rgb(228, 228, 228);
-background: linear-gradient(0deg, rgba(143,143,143,0) 0%, rgb(230, 230, 230) 100%);
+background: linear-gradient(0deg, rgba(255, 0, 0, 0) 0%, rgb(238, 238, 238) 100%);
+box-shadow: 0px 7px 20px 8px #b7b7b759;
 }
 .navbar-custom-dark {
     background: rgb(0,0,0);
     background: linear-gradient(0deg, rgba(18, 18, 18, 0.66) 0%, rgba(0,0,0,1) 100%);
-}
+    box-shadow: 0px 4px 25px 8px #ffffff16;
+  }
 .dropdown-menu.show.dropdown-menu-light {
-  background-color: #ededed;
+  background-color: #f3f3f3;
   border: none;
 }
 .dropdown-menu.show.dropdown-menu-dark {
-  background-color: #121212;
+  background-color: #0c0c0c;
   border: none;
 }
-/* .MuiButtonBase-root.MuiButton-root.MuiButton-outlined.MuiButton-outlinedSuccess.MuiButton-sizeMedium.MuiButton-outlinedSizeMedium.MuiButton-root.MuiButton-outlined.MuiButton-outlinedSuccess.MuiButton-sizeMedium.MuiButton-outlinedSizeMedium.css-sxix9q-MuiButtonBase-root-MuiButton-root{
-    color: #a8ff9e;
-} */
+
+
+
+
+
 
 .btn.bg-light{
-    border-color: #c0ffb9;
-    color: #0b5d00;
+  color: #052d00;
+  border-color: #9fff92;
 }
+
 .btn.bg-dark{
     border-color: #052d00;
     color: #9fff92;

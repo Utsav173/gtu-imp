@@ -17,9 +17,9 @@ const Header = (props) => {
             <Link to="/" className="nav-link">
               Home
             </Link>
-            <Link to="/download" className="nav-link">
+            {/* <Link to="/download" className="nav-link">
               Download
-            </Link>
+            </Link> */}
             <Link to="/about" className="nav-link">
               About
             </Link>
