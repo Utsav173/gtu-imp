@@ -12,12 +12,12 @@ const Home = (props) => {
           Click below button to read document
         </h1>
         <Nav className="me-auto d-flex justify-content-evenly my-4 gap-4">
-          <Link
+          {/* <Link
             to="/gtuimp"
             className={`btn-op-${props.mode}`}
           >
             GTU IMP QUESTIONS
-          </Link>
+          </Link> */}
           <Link
             to="/iswapaper"
             className="btn gg"
