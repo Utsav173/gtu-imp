@@ -8,7 +8,7 @@ const Home = (props) => {
   return (
     <Container className={`text-${props.mode === "light" ? "dark" : "light"}`}>
       <Container className="text-center">
-        <h1 variant="secondary" className="my-2 p-2 text-capitalize">
+        <h1 variant="secondary" className="my-4 p-2 text-capitalize">
           Click below button to read document
         </h1>
         <Nav className="me-auto d-flex justify-content-evenly my-4 gap-2">
