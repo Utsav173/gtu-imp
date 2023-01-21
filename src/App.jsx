@@ -2,9 +2,9 @@ import "./App.css";
 import React, { useState } from "react";
 import {
   BrowserRouter as Router,
-  Navigate,
   Route,
   Routes,
+  useNavigate,
 } from "react-router-dom";
 import Home from "./Components/Home";
 import About from "./Components/About";
@@ -39,13 +39,7 @@ function App() {
         <Route index path="/*" element={<Home mode={mode} />} />
         <Route exact path="/about" element={<About mode={mode} />} />
         <Route exact path="/downloada" element={<Download mode={mode} />} />
-        <Route exact path="/gtuimp" element={<Paper linka="gtuimp" />} />
-        <Route exact path="/adudpaper" element={<Paper linka="adudpaper" />} />
-        <Route exact path="/iswapaper" element={<Paper linka="iswapaper" />} />
-        <Route exact path="/varpaper" element={<Paper linka="varpaper" />} />
-        <Route exact path="/cvpaper" element={<Paper linka="cvpaper" />} />
-        <Route exact path="/iotpaper" element={<Paper linka="iotpaper" />} />
-        <Route exact element={<Navigate to="/*" />} />
+
       </Routes>
     </Router>
   );

@@ -22,8 +22,8 @@ const Paper = ({ linka }) => {
     setloading(false);
   }
   return (
-    <Container className="ada">
-      <div className="shadow p-1 my-4 bg-body-tertiary">
+    <Container className="ada my-3 my-sm-1 my-md-2">
+      <div className="shadow p-xl-3 p-md-3 p-1 my-4 bg-body-tertiary">
         <Document
           file={file}
           onLoadSuccess={onDocumentLoadSuccess}
