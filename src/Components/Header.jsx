@@ -29,31 +29,31 @@ const Header = (props) => {
               id="basic-nav-dropdown"
             >
               <NavDropdown.Item 
-                href="https://utsav173.github.io/7-it-paper/adud-paper"
+                href="https://7-it-paper.vercel.app/adud-paper/"
                 target="blank"
               >
                 ADUD paper
               </NavDropdown.Item>
               <NavDropdown.Item 
-                href="https://utsav173.github.io/7-it-paper/var-paper"
+                href="https://7-it-paper.vercel.app/var-paper/"
                 target="blank"
               >
                 VAR paper
               </NavDropdown.Item>
               <NavDropdown.Item 
-                href="https://utsav173.github.io/7-it-paper/iswa-paper"
+                href="https://7-it-paper.vercel.app/iswa-paper/"
                 target="blank"
               >
                 ISWA paper
               </NavDropdown.Item>
               <NavDropdown.Item 
-                href="https://utsav173.github.io/7-it-paper/cv-paper"
+                href="https://7-it-paper.vercel.app/cv-paper/"
                 target="blank"
               >
                 CV paper
               </NavDropdown.Item>
               <NavDropdown.Item 
-                href="https://utsav173.github.io/7-it-paper/iot-paper"
+                href="https://7-it-paper.vercel.app/iot-paper/"
                 target="blank"
               >
                 IOT paper
