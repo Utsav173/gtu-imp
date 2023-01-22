@@ -23,65 +23,6 @@
   transition: 0.2s ease;
 }
 
-.btn.text-capitalize.my-1.fd {
-
-  text-decoration: none;
-  position: relative;
-  border: none;
-  font-family: inherit;
-  color: #fff;
-
-  background: linear-gradient(90deg, #03a9f4, #ff53b5, #ffeb3b, #03a9f4);
-  background-size: 300%;
-  border-radius: 15px;
-  transition: 0.5s cubic-bezier(0.39, 0.14, 0.57);
-  z-index: 1;
-}
-
-.btn.text-capitalize.my-1.fd:hover {
-  animation: ani 8s linear infinite;
-  border: none;
-  font-weight: bold;
-}
-
-.btn.text-capitalize.my-1.fd:focus {
-  outline: none;
-}
-
-
-
-@keyframes ani {
-  0% {
-    background-position: 0%;
-  }
-
-  100% {
-    background-position: 400%;
-  }
-}
-
-.btn.text-capitalize.my-1.fd:before {
-  content: '';
-  position: absolute;
-  top: -2px;
-  left: -2px;
-  right: -2px;
-  bottom: -2px;
-  z-index: -1;
-  background: linear-gradient(90deg, #03a9f4, #ff0090, #ffeb3b, #03a9f4);
-  background-size: 400%;
-  border-radius: 7px;
-  transition: 1s;
-  font-weight: lighter;
-}
-
-.btn.text-capitalize.my-1.fd:hover::before {
-  filter: blur(20px);
-}
-
-.btn.text-capitalize.my-1.fd:active {
-  background: linear-gradient(32deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
-}
 
 @media only screen and (min-width: 600px) {
   .ada {
