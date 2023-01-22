@@ -4,13 +4,11 @@ import {
   BrowserRouter as Router,
   Route,
   Routes,
-  useNavigate,
 } from "react-router-dom";
 import Home from "./Components/Home";
 import About from "./Components/About";
 import Header from "./Components/Header";
 import Download from "./Components/Download";
-import Paper from "./Components/Paper";
 
 
 
@@ -38,8 +36,7 @@ function App() {
       <Routes>
         <Route index path="/*" element={<Home mode={mode} />} />
         <Route exact path="/about" element={<About mode={mode} />} />
-        <Route exact path="/downloada" element={<Download mode={mode} />} />
-
+        <Route exact path="/download" element={<Download mode={mode} />} />
       </Routes>
     </Router>
   );

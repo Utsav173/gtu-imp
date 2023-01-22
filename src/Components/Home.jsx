@@ -20,11 +20,11 @@ const obj =[
 
   return (
     <Container className={`text-${props.mode === "light" ? "dark" : "light"}`}>
-      <Container className="text-center">
+      <Container className="text-center my-2">
         <h1 variant="secondary" className="my-4 p-2 text-capitalize">
           Click below button to read document
         </h1>
-        <main className="row row-cols-sm-1 row-cols-xl-4 gap-2 justify-content-around align-item-center">
+        <main className="row row-cols-sm-1 row-cols-xl-4 gap-2 mb-2 justify-content-around align-item-center">
           {obj.map((itms)=>{
             return <Viewbutton link={itms.link} title={itms.title} mode={props.mode}/>
           })}

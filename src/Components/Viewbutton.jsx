@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const Viewbutton = ({ link, title, mode }) => {
   return (
-    <Link className={`button-${mode} text-uppercase my-xl-3`} to={`/${link}`}>
+    <Link className={`button-${mode} text-uppercase my-xl-2 my-3`} to={`/${link}`}>
       {title}
     </Link>
   );
