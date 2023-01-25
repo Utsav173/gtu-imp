@@ -9,7 +9,6 @@ import Home from "./Components/Home";
 import About from "./Components/About";
 import Header from "./Components/Header";
 import Download from "./Components/Download";
-import Movies from "./Components/Movies";
 
 
 
@@ -38,7 +37,6 @@ function App() {
         <Route index path="/*" element={<Home mode={mode} />} />
         <Route exact path="/about" element={<About mode={mode} />} />
         <Route exact path="/download" element={<Download mode={mode} />} />
-        <Route exact path="/movies" element={<Movies/>} />
       </Routes>
     </Router>
   );
