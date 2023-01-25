@@ -23,6 +23,9 @@ const Header = (props) => {
             <Link to="/about" className="nav-link">
               About
             </Link>
+            <Link to="/movies" className="nav-link">
+              Movies
+            </Link>
             <NavDropdown
               menuVariant={props.mode}
               title="Old Website"
