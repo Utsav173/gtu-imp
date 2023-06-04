@@ -124,7 +124,7 @@ const Page = () => {
               <Tr key={`row_${index + 1}`}>
                 <Td>{row.id}</Td>
                 <Td>{row.name}</Td>
-                <Td>{row.name}</Td>
+                <Td>{row.year}</Td>
                 <Td isNumeric>
                   <Button
                     aria-label="download Paper"
