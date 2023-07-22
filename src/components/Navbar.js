@@ -140,6 +140,7 @@ const DesktopSubNav = ({ label, href }) => {
   return (
     <Link
       href={href}
+      target="_blank"
       className="block py-2 px-3 rounded-md hover:bg-pink-50 dark:hover:bg-gray-900 text-white text-justify min-w-max"
     >
       {label}
@@ -200,6 +201,7 @@ const MobileDropdownNavItem = ({ label, children }) => {
             <Link
               key={child.label}
               href={child.href}
+              target="_blank"
               className="block py-2 text-sm text-gray-600 dark:text-white hover:bg-gray-200 dark:hover:bg-gray-800"
             >
               {child.label}
