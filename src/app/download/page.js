@@ -1,18 +1,4 @@
-"use client";
-import { DownloadIcon } from "@chakra-ui/icons";
-import {
-  Button,
-  Flex,
-  Table,
-  TableContainer,
-  Tbody,
-  Td,
-  Th,
-  Thead,
-  Tr,
-  useColorModeValue,
-} from "@chakra-ui/react";
-
+import { BsDownload } from "react-icons/bs";
 const Page = () => {
   const rows = [
     {
@@ -102,46 +88,44 @@ const Page = () => {
   ];
 
   return (
-    <Flex
-      justifyContent={"center"}
-      alignItems={"center"}
-      flexDirection={"column"}
-      bg={useColorModeValue("gray.100", "#1B1B1B")}
-      w={"100%"}
-    >
-      <TableContainer my={2}>
-        <Table size="sm">
-          <Thead>
-            <Tr>
-              <Th isNumeric>no.</Th>
-              <Th>Subject</Th>
-              <Th>Year</Th>
-              <Th>Download</Th>
-            </Tr>
-          </Thead>
-          <Tbody>
-            {rows.map((row, index) => (
-              <Tr key={`row_${index + 1}`}>
-                <Td>{row.id}</Td>
-                <Td>{row.name}</Td>
-                <Td>{row.year}</Td>
-                <Td isNumeric>
-                  <Button
-                    aria-label="download Paper"
-                    leftIcon={<DownloadIcon />}
-                    size={"sm"}
-                    as="a"
-                    href={row.link}
-                  >
-                    Download
-                  </Button>
-                </Td>
-              </Tr>
-            ))}
-          </Tbody>
-        </Table>
-      </TableContainer>
-    </Flex>
+    <div className="flex justify-center items-center flex-col bg-gray-100 w-full">
+      <div className="container mx-auto px-4">
+        <div className="overflow-x-auto">
+          <table className="table-fixed w-full text-center">
+            <thead>
+              <tr>
+                <th className="w-1/4 max-sm:w-1/6 py-3">no.</th>
+                <th className="w-1/4 py-3">Subject</th>
+                <th className="w-1/4 py-3">Year</th>
+                <th className="w-1/4 py-3">Download</th>
+              </tr>
+            </thead>
+            <tbody>
+              {rows.map((row, index) => (
+                <tr
+                  key={`row_${index + 1}`}
+                  className="bg-white hover:bg-gray-100 transition-all"
+                >
+                  <td className="w-1/4 max-sm:w-1/6 py-3">{row.id}</td>
+                  <td className="w-1/4 max-sm:min-w-max py-3">{row.name}</td>
+                  <td className="w-1/4 py-3">{row.year}</td>
+                  <td className="w-1/4 py-3">
+                    <a
+                      href={row.link}
+                      className="px-4 py-2 text-sm bg-blue-500 text-white rounded-md flex items-center justify-center transition-all hover:bg-blue-600"
+                      aria-label="download Paper"
+                    >
+                      <BsDownload className="mr-1" color="white" />
+                      <span className="max-sm:hidden">Download</span>
+                    </a>
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
   );
 };
 
