@@ -549,7 +549,7 @@ const SidebarMenuButton = React.forwardRef<
   (
     {
       asChild = false,
-      isActive: isActiveProp,
+      isActive,
       variant = "default",
       size = "default",
       tooltip,
@@ -564,7 +564,7 @@ const SidebarMenuButton = React.forwardRef<
 
     const currentPathname = usePathname();
 
-    const isActive = currentPathname === pathname;
+    isActive = isActive ?? currentPathname === pathname;
 
     const button = (
       <Comp

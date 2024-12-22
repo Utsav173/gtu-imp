@@ -1,7 +1,6 @@
 import * as React from "react";
 import { ChevronRight } from "lucide-react";
 
-import { SearchForm } from "@/components/search-form";
 import { VersionSwitcher } from "@/components/version-switcher";
 import {
   Collapsible,
@@ -22,9 +21,8 @@ import {
 } from "@/components/ui/sidebar";
 import Link from "next/link";
 
-// This is sample data.
 const data = {
-  versions: ["1.0.0"],
+  versions: ["3.0.0"],
   navMain: [
     {
       title: "Home",
@@ -75,7 +73,6 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
           versions={data.versions}
           defaultVersion={data.versions[0]}
         />
-        <SearchForm />
       </SidebarHeader>
       <SidebarContent className="gap-0">
         {data.navMain.map((item) =>

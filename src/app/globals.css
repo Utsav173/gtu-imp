@@ -108,7 +108,7 @@ div[data-sidebar="sidebar"]::-webkit-scrollbar {
   display: none;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 900px) {
   .custom-scrollbar {
     scrollbar-gutter: stable;
   }

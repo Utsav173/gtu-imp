@@ -2,15 +2,13 @@ import React from "react";
 
 import { cn } from "@/lib/utils";
 import Link from "next/link";
-interface PdfButtonProps
-  extends React.AnchorHTMLAttributes<HTMLAnchorElement> {}
 
 export function PdfButton({
   children,
   className,
   href,
   ...props
-}: PdfButtonProps) {
+}: React.AnchorHTMLAttributes<HTMLAnchorElement>) {
   return (
     <Link
       href={href ?? "#"}

@@ -1,36 +1,89 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# GTU IMP - Educational Resource Hub 📚
 
-## Getting Started
+A comprehensive web platform providing educational resources for GTU (Gujarat Technological University) students, with a focus on previous year papers and study materials.
 
-First, run the development server:
+![GTU IMP Platform](https://raw.githubusercontent.com/Utsav173/gtu-imp/main/public/image.png)
 
+## Features 🌟
+
+- **Previous Year Papers**: Access to a curated collection of past exam papers
+- **Subject-wise Organization**: Content organized by subjects for easy navigation
+- **Modern UI**: Clean and responsive interface built with Next.js 13 and Tailwind CSS
+- **Dark Mode**: Support for both light and dark themes
+- **Mobile-Friendly**: Fully responsive design for all device sizes
+- **PDF Viewer**: Built-in PDF viewer for seamless document reading
+- **Search Functionality**: Quick access to specific resources
+
+## Available Resources 📖
+
+- ADUD (Advanced Database and Usage Design)
+- VAR (Virtual & Augmented Reality)
+- ISWA (Information System & Web Application)
+- CV (Computer Vision)
+- IoT (Internet of Things)
+- SPM (Software Project Management)
+- GTU Important Questions
+
+## Tech Stack 🛠️
+
+- Next.js 15 (App Router)
+- React 19
+- Tailwind CSS
+- Radix UI
+- TypeScript
+- Shadcn UI Components
+
+## Getting Started 🚀
+
+1. **Clone the repository**
+```bash
+git clone https://github.com/Utsav173/gtu-imp.git
+cd gtu-imp
+```
+
+2. **Install dependencies**
+```bash
+npm install
+# or
+yarn install
+```
+
+3. **Run the development server**
 ```bash
 npm run dev
 # or
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+4. **Open in browser**
+Visit [http://localhost:3000](http://localhost:3000)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Contributing 🤝
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Contributions are welcome! Feel free to:
 
-## Learn More
+- Report bugs
+- Suggest new features
+- Submit pull requests
 
-To learn more about Next.js, take a look at the following resources:
+Please read our [Contributing Guidelines](CONTRIBUTING.md) before making a contribution.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## License 📄
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+This project is licensed under the [MIT License](LICENSE).
 
-## Deploy on Vercel
+## Support 💬
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- Create an issue for bug reports
+- Star ⭐ the repo if you find it helpful
+- Share with other students who might benefit
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Acknowledgments 🙏
+
+- Thanks to all contributors
+- Special thanks to the GTU community
+- Built with ❤️ for students
+
+---
+
+Made with ❤️ by Utsav Khatri

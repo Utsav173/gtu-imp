@@ -7,6 +7,7 @@ import { pdfjs, Document, Page } from "react-pdf";
 import "react-pdf/dist/esm/Page/AnnotationLayer.css";
 import "react-pdf/dist/esm/Page/TextLayer.css";
 import "../../globals.css";
+import { Skeleton } from "@/components/ui/skeleton";
 
 pdfjs.GlobalWorkerOptions.workerSrc = `https://cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.mjs`;
 
@@ -49,9 +50,10 @@ const Paper = () => {
           onLoadSuccess={onDocumentLoadSuccess}
           onLoadError={onDocumentLoadError}
           options={options}
+          loading={<Skeleton className="w-full h-full rounded-lg" />}
         >
           {loading ? (
-            <p className="text-center text-gray-500">Loading...</p>
+            <Skeleton className="w-full h-full rounded-lg" />
           ) : error ? (
             <p className="text-center text-red-500">{error}</p>
           ) : (

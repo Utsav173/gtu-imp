@@ -38,7 +38,7 @@ export default function About() {
         </CardHeader>
         <CardContent className="space-y-4">
           <p>
-            We're dedicated to making quality education accessible to everyone.
+            We&apos;re dedicated to making quality education accessible to everyone.
             Our platform serves as a comprehensive repository of carefully
             curated educational materials, focusing on past papers and study
             resources that have proven invaluable for student success.
@@ -93,7 +93,7 @@ export default function About() {
       <Card className="bg-muted/50 border border-border">
         <CardContent className="pt-6">
           <p className="text-center text-muted-foreground">
-            We're constantly working to improve and expand our resource
+            We&apos;re constantly working to improve and expand our resource
             collection. Your feedback and suggestions help us better serve the
             educational community.
           </p>

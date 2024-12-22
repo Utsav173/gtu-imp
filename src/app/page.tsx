@@ -27,7 +27,7 @@ export default function Page() {
       />
       <HyperText
         as="h1"
-        className="font-semibold mx-auto text-3xl max-md:text-xl"
+        className="font-semibold mx-auto text-3xl max-md:text-xl max-sm:text-lg my-4"
         animateOnHover={false}
         duration={40}
       >
@@ -35,9 +35,13 @@ export default function Page() {
       </HyperText>
 
       {/** create grid of button for desktop view set as auto column and mobile view auto row */}
-      <div className="grid grid-cols-1 gap-4 lg:grid-cols-2 xl:grid-cols-4 px-1 md:px-3">
+      <div className="grid grid-cols-1 gap-4 lg:grid-cols-2 xl:grid-cols-4 px-1 md:px-3 my-4">
         {obj.map((item, index) => (
-          <PdfButton key={index} href={`/paper/${item.link}`}>
+          <PdfButton
+            key={index}
+            href={`/paper/${item.link}`}
+            className="text-nowrap"
+          >
             {item.title}
           </PdfButton>
         ))}
