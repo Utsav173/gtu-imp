@@ -2,7 +2,7 @@
 
 A comprehensive web platform providing educational resources for GTU (Gujarat Technological University) students, with a focus on previous year papers and study materials.
 
-![GTU IMP Platform](https://raw.githubusercontent.com/Utsav173/gtu-imp/main/public/image.png)
+![GTU IMP Platform](https://raw.githubusercontent.com/Utsav173/gtu-imp/refs/heads/master/public/image.png)
 
 ## Features 🌟
 
