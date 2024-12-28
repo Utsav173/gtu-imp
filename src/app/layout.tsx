@@ -31,28 +31,78 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "7th Sem IMP All Subject",
+  title: "GTU Important Questions & Papers | 7th Sem IT IMP | GTU Exam Resources",
   description:
-    "GTU 7th sem IT Subject all subject imp question and answers for GTU exam",
+    "Access GTU 7th semester IT important questions, solved papers, and exam resources. Prepare for GTU exams with the best study material for SPM, VAR, ISWA, ADUD, and more.",
   keywords: [
-    "SPM PAPER",
-    "VAR PAPER",
-    "ISWA PAPER",
-    "ADUD PAPER",
-    "GTU paper solution",
-    "cheemsbazi paper solution",
+    "GTU question paper",
     "GTU imp",
-    "IT",
-    "GTU",
-    "7th sem imp gtu exam 2022",
+    "GTU important questions",
+    "GTU 7th sem IT",
+    "GTU exam papers",
+    "GTU paper solution",
+    "GTU study material",
+    "GTU exam preparation",
+    "GTU 2022 papers",
+    "GTU SPM paper",
+    "GTU VAR paper",
+    "GTU ISWA paper",
+    "GTU ADUD paper",
+    "GTU IT imp questions",
+    "GTU exam resources",
+    "GTU previous year papers",
+    "GTU syllabus",
+    "GTU exam tips",
   ],
-  authors: { name: "hamcker" },
+  authors: [{ name: "hamcker", url: "https://gtu-imp.vercel.app/" }],
+  creator: "hamcker",
+  publisher: "GTU IMP",
   icons: {
     icon: "/icon.svg",
     apple: "/icon.svg",
   },
   verification: {
     google: "4b4H3hr3KG4V1J6eRzWhNZDf84yIPAcR1x32o0EpF8U",
+  },
+  openGraph: {
+    title: "GTU Important Questions & Papers | 7th Sem IT IMP | GTU Exam Resources",
+    description:
+      "Access GTU 7th semester IT important questions, solved papers, and exam resources. Prepare for GTU exams with the best study material for SPM, VAR, ISWA, ADUD, and more.",
+    url: "https://gtu-imp.vercel.app/",
+    siteName: "GTU IMP",
+    images: [
+      {
+        url: "https://gtu-imp.vercel.app/og-image.jpg", // Replace with your actual OG image URL
+        width: 1200,
+        height: 630,
+        alt: "GTU IMP OG Image",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "GTU Important Questions & Papers | 7th Sem IT IMP | GTU Exam Resources",
+    description:
+      "Access GTU 7th semester IT important questions, solved papers, and exam resources. Prepare for GTU exams with the best study material for SPM, VAR, ISWA, ADUD, and more.",
+    images: ["https://gtu-imp.vercel.app/twitter-image.jpg"], // Replace with your actual Twitter image URL
+  },
+  alternates: {
+    canonical: "https://gtu-imp.vercel.app/",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    nocache: false,
+    googleBot: {
+      index: true,
+      follow: true,
+      noimageindex: false,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
   },
 };
 
