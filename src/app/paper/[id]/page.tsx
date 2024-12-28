@@ -44,26 +44,35 @@ const Paper = () => {
 
   return (
     <div className="rounded-lg overflow-hidden h-full w-full relative mx-auto my-6 px-4 max-w-4xl">
-      <div className="absolute max-w-max mx-auto w-full h-full inset-0 overflow-y-auto rounded-lg custom-scrollbar">
+      <div className="absolute max-w-full mx-auto w-full h-full inset-0 overflow-y-auto overflow-x-hidden rounded-lg custom-scrollbar">
         <Document
           file={file}
           onLoadSuccess={onDocumentLoadSuccess}
           onLoadError={onDocumentLoadError}
           options={options}
           loading={<Skeleton className="w-full h-full rounded-lg" />}
+          className="!overflow-visible"
         >
           {loading ? (
             <Skeleton className="w-full h-full rounded-lg" />
           ) : error ? (
             <p className="text-center text-red-500">{error}</p>
           ) : (
-            <div className="flex flex-col items-center gap-4">
+            <div className="flex flex-col items-center gap-4 w-full ">
               {Array.from(new Array(numPages), (_, index) => (
                 <div
                   key={`page_${index + 1}`}
-                  className="shadow-md border rounded-lg overflow-hidden"
+                  className="shadow-md border rounded-lg overflow-hidden w-full"
+                  style={{ width: "100%" }}
                 >
-                  <Page pageNumber={index + 1} className="w-full" />
+                  <div className="relative">
+                    <Page
+                      pageNumber={index + 1}
+                      className="!w-full !overflow-visible"
+                      renderAnnotationLayer={false}
+                      renderTextLayer={false}
+                    />
+                  </div>
                 </div>
               ))}
             </div>
